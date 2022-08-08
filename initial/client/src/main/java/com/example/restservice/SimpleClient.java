@@ -21,14 +21,14 @@ public class SimpleClient {
 
     for(int i = 0; i < args.length; i++) {
       if("-i".equals(args[i])) {
-        if( i < args.length ) {
+        if( i < args.length-1 ) {
           identityFile = args[++i];
         } else {
           usageAndExit();
         }
       }
       if("-s".equals(args[i])) {
-        if( i < args.length) {
+        if( i < args.length-1) {
           serviceName = args[++i];
         } else {
           usageAndExit();
